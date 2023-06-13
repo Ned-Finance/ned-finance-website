@@ -15,7 +15,7 @@ export default function Cta() {
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <a
-            href="#"
+            href="https://1cyg06jzg1f.typeform.com/to/c5Z437EG"
             target="_blank"
             rel="noopener"
             className="inline-block py-3 mx-auto text-lg font-medium text-center text-ned-green bg-gray-900 rounded-md px-7 lg:px-10 lg:py-5 ">

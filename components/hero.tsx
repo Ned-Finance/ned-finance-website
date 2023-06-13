@@ -30,7 +30,7 @@ export default function Hero() {
 
             <div className="flex flex-col items-start space-x-3 space-y-3 sm:space-y-0 sm:items-center sm:flex-row">
               <a
-                href="#"
+                href="https://1cyg06jzg1f.typeform.com/to/c5Z437EG"
                 target="_blank"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-black bg-ned-green rounded-md ">

@@ -36,7 +36,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      sans: ["Noto Sans", "Inter", ...defaultTheme.fontFamily.sans],
       calSans: ["CalSans"],
     },
   },
