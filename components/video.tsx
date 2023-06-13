@@ -8,7 +8,7 @@ export default function Video() {
       <div className="w-full max-w-4xl mx-auto mb-20 overflow-hidden rounded-2xl ">
         <div
           onClick={() => setPlayVideo(!playVideo)}
-          className="relative bg-ned-green-300 cursor-pointer aspect-w-16 aspect-h-9 bg-gradient-to-tr from-purple-400 to-indigo-700">
+          className="relative bg-ned-green-300 cursor-pointer aspect-w-16 aspect-h-9 bg-gradient-to-tr from-ned-blue to-ned-green">
           {!playVideo && (
             <button className="absolute inset-auto text-white transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 top-1/2 left-1/2">
               <svg

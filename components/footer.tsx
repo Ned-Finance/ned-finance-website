@@ -4,8 +4,9 @@ import Container from "./container";
 
 export default function Footer() {
   const navigation = [
+    { label: "Who are we?", href: "#", target: "_self" },
+    { label: "NFT Collection", href: "#", target: "_self" },
     { label: "Roadmap", href: "/roadmap", target: "_self" },
-    { label: "Who we are", href: "/company", target: "_self" },
     { label: "Blog", href: "https://blog.ned.finance", target: "_blank" }
   ];
   const legal = ["Terms", "Privacy", "Legal"];
