@@ -3,10 +3,11 @@ import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
   const navigation = [
-    { label: "Who are we?", href: "#", target: "_self" },
-    { label: "NFT Collection", href: "#", target: "_self" },
-    { label: "Roadmap", href: "#", target: "_self" },
-    { label: "Blog", href: "#", target: "_self" },
+    { label: "Doxing", href: "/doxing", target: "_self" },
+    { label: "NFT Collection", href: "/ned-nft-collection", target: "_self" },
+    { label: "Roadmap", href: "/roadmap", target: "_self" },
+    { label: "Docs", href: "https://docs.ned.finance", target: "_blank" },
+    { label: "Blog", href: "https://blog.ned.finance", target: "_blank" },
   ];
 
   return (

@@ -12,7 +12,7 @@ import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
   title: "A new world for your finances",
-  desc: "Blockchain and cryptocurrencies are more than just holding, it's the new way of financial freedom.",
+  desc: () => <p>Blockchain and cryptocurrencies are more than just holding, it's the new way of financial freedom.</p>,
   image: benefitOneImg,
   bullets: [
     {
@@ -35,7 +35,7 @@ const benefitOne = {
 
 const benefitTwo = {
   title: "All your NFTs collections in one place",
-  desc: "More than JPGs, with NED you can get all your collections from THE fastest blockchains in one place. Forget about going to a website to list them, major NFTs marketplaces right in your phone.",
+  desc: () => <p>More than JPGs, with NED you can get all your collections from THE fastest blockchains in one place. Forget about going to a website to list them, major NFTs marketplaces right in your phone.</p>,
   image: benefitTwoImg,
   bullets: [
     {

@@ -13,7 +13,7 @@ import Faq from "../components/faq";
 import Features from "../components/features";
 
 
-export default function Home() {
+export default () => {
   return (
     <>
       <Head>
