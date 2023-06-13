@@ -64,11 +64,11 @@ export default function Navbar() {
                         </span>
                       </Link>
                     ))}
-                    <Link href="/">
+                    {/* <Link href="/">
                       <span className="w-full px-6 py-2 mt-3 text-center text-black bg-ned-green rounded-md lg:ml-5">
                         Get Started
                       </span>
-                    </Link>
+                    </Link> */}
                   </>
                 </Disclosure.Panel>
               </div>
@@ -91,15 +91,13 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className="hidden mr-3 space-x-3 lg:flex nav__item">
+        {/* <div className="hidden mr-3 space-x-3 lg:flex nav__item">
           <Link href="/">
             <span className="px-6 py-2 text-black bg-ned-green rounded-md md:ml-5">
               Get Started
             </span>
           </Link>
-
-          {/* <ThemeChanger /> */}
-        </div>
+        </div> */}
       </nav>
     </div>
   );

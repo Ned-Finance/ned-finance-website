@@ -76,25 +76,21 @@ export default () => {
                         className="vertical-timeline-element--work"
                         contentStyle={contentStyle}
                         contentArrowStyle={contentArrowStyle}
-                        date="v1.2.0"
+                        date="v1.3.0"
                         iconStyle={iconStyle}
                     >
-                        <h3 className="vertical-timeline-element-title text-neutral-500">June 2023</h3>
-                        <h4 className="vertical-timeline-element-subtitle text-3xl">Sui: Wallet Basic features</h4>
-                        <ul className='list-disc text-neutral-400 mt-4 ml-4'>
-                            <li>Create/import wallet</li>
-                            <li>Load all user tokens</li>
-                            <li>Get movements history from each token</li>
-                            <li>Get market information for each token</li>
-                            <li>Send/Receive tokens on same network</li>
-                        </ul>
+                        <h3 className="vertical-timeline-element-title text-neutral-500">Jul 2023</h3>
+                        <h4 className="vertical-timeline-element-subtitle text-3xl"><span className="text-ned-green">Launch:</span> Beta release</h4>
+                        <p className='text-neutral-400 mt-4 ml-4'>
+                            Our NFT membership collection will launch
+                        </p>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={contentStyle}
                         contentArrowStyle={contentArrowStyle}
-                        date="v1.3.0"
+                        date="v1.4.0"
                         iconStyle={iconStyle}
                     >
                         <h3 className="vertical-timeline-element-title text-neutral-500">Jul 2023</h3>
@@ -112,7 +108,21 @@ export default () => {
                         className="vertical-timeline-element--work"
                         contentStyle={contentStyle}
                         contentArrowStyle={contentArrowStyle}
-                        date="v1.2.0"
+                        date="v1.5.0"
+                        iconStyle={iconStyle}
+                    >
+                        <h3 className="vertical-timeline-element-title text-neutral-500">Ago 2023</h3>
+                        <h4 className="vertical-timeline-element-subtitle text-3xl"><span className="text-ned-green">Launch:</span> NFT Collection Membership</h4>
+                        <p className='text-neutral-400 mt-4 ml-4'>
+                            Our NFT membership collection will launch
+                        </p>
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={contentStyle}
+                        contentArrowStyle={contentArrowStyle}
+                        date="v1.6.0"
                         iconStyle={iconStyle}
                     >
                         <h3 className="vertical-timeline-element-title text-neutral-500">Ago 2023</h3>
