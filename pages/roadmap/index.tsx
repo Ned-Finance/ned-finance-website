@@ -82,7 +82,7 @@ export default () => {
                         <h3 className="vertical-timeline-element-title text-neutral-500">Jul 2023</h3>
                         <h4 className="vertical-timeline-element-subtitle text-3xl"><span className="text-ned-green">Launch:</span> Beta release</h4>
                         <p className='text-neutral-400 mt-4 ml-4'>
-                            Our NFT membership collection will launch
+                            First published version of the app
                         </p>
                     </VerticalTimelineElement>
 
