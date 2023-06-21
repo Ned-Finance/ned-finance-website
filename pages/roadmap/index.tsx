@@ -48,7 +48,7 @@ export default () => {
                         <ul className='list-disc text-neutral-400 mt-4 ml-4'>
                             <li>List user NFTs collections</li>
                             <li>Solana Pay integration</li>
-                            <li>Swap tokens with Prism integration</li>
+                            <li>Swap tokens with Jupiter integration</li>
                             <li>Funds with Symmetry integration</li>
                             <li>Magic Eden integration</li>
                         </ul>
