@@ -5,17 +5,17 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <NextSeo
-        title="Ned Finance: all in on multi-chain DeFi wallet, made easy | %s"
+        title="Ned Finance: all in on multi-chain DeFi wallet, made simple | %s"
         description="Ned Finance is a next level wallet to take DeFi one step further, creating unique experiences while increasing the use cases of crypto."
         canonical="https://ned.finance/"
         openGraph={{
           url: 'https://ned.finance/',
-          title: 'Ned Finance: all in on multi-chain DeFi wallet, made easy',
+          title: 'Ned Finance: all in on multi-chain DeFi wallet, made simple',
           description: 'Ned Finance is a next level wallet to take DeFi one step further, creating unique experiences while increasing the use cases of crypto.',
           images: [
             {
               url: 'https://ned.finance/img/og.jpg',
-              alt: 'Ned Finance: all in on multi-chain DeFi wallet, made easy',
+              alt: 'Ned Finance: all in on multi-chain DeFi wallet, made simple',
               type: 'image/jpeg',
             },
           ],
