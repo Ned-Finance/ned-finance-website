@@ -36,14 +36,14 @@ export default () => {
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
+      {/* <SectionTitle
         pretitle="A DeFi wallet for all your finances"
         title="Learn what NED + web3/blockchain can do for you">
         Web3 is about freedom, blockchain is about security and privacy and we
         know how to put those powers in the palm of your hand. A DeFi wallet
         focused on your experience and your finances.
       </SectionTitle>
-      <Video />
+      <Video /> */}
       <SectionTitle
         pretitle="Why a DeFi wallet?"
         title="The most fundamental piece to interact with web3 is a wallet">
