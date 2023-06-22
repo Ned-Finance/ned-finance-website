@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-ned-green to-ned-blue font-calSans">
-              Multichain DeFi Wallet, for humans
+              Multichain DeFi Wallet, made easy
             </h1>
             <div className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
               <div>Your personal DeFi Wallet only for the fastest blockchains. </div>
