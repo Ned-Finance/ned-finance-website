@@ -18,7 +18,7 @@ export default function Hero() {
               Multichain DeFi Wallet, made simple
             </h1>
             <div className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-              <div>Your personal DeFi Wallet only for the fastest blockchains. </div>
+              <div>Your personal DeFi Wallet for the fastest blockchains. </div>
               <div className="flex mt-2">
                 <div className="flex ml-1 mt-1">
                   <Image className="mr-2" height={20} src={solanaIsotype} alt="Solana"></Image>
