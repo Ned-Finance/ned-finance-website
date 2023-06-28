@@ -12,7 +12,7 @@ export default () => {
         title: "Fully decentralized, governed by holders",
         desc: () => <div>
             <p className='mb-8'>Ned finance is not like a regular wallet governed by the company who built it. Our fully decentralized model allows anyone to be part of the future of Ned Finance, fully governed by token holders through our DAO.</p>
-            <p className="text-ned-green">Ned Finance has been created on top of decentralisation and autonomy.</p>
+            <p className="text-ned-green">Ned Finance has been created on top of decentralization and autonomy.</p>
         </div>,
         image: Holders,
         bullets: [],
