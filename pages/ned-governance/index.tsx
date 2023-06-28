@@ -1,11 +1,10 @@
 import 'react-vertical-timeline-component/style.min.css';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import NedNftCollection from "../../public/img/ned-nft-collection.png";
-import { ArrowTrendingUpIcon, ChartBarSquareIcon, WalletIcon } from '@heroicons/react/24/outline';
 import Benefits from '../../components/benefits';
 import Container from "../../components/container";
-import Link from 'next/link';
+import Holders from "../../public/img/holders.png";
+import NedToken from "../../public/img/ned-token.png";
 
 export default () => {
 
@@ -15,7 +14,7 @@ export default () => {
             <p className='mb-8'>Ned finance is not like a regular wallet governed by the company who built it. Our fully decentralized model allows anyone to be part of the future of Ned Finance, fully governed by token holders through our DAO.</p>
             <p className="text-ned-green">Ned Finance has been created on top of decentralisation and autonomy.</p>
         </div>,
-        image: NedNftCollection,
+        image: Holders,
         bullets: [],
     };
 
@@ -25,7 +24,7 @@ export default () => {
             <p className='mb-8'>NED token is used to vote and participate in Ned Finance's governance system. To find all the information about our token read our Ned Token section in Ned Finance's <a className="text-ned-green" href="https://docs.ned.finance">docs</a></p>
             <p><a className="text-ned-green" href="https://docs.ned.finance">Read Ned Token Tokenomics</a></p>
         </div>,
-        image: NedNftCollection,
+        image: NedToken,
         bullets: [],
     };
 

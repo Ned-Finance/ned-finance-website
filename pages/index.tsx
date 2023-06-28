@@ -11,6 +11,7 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import Features from "../components/features";
+import FullWidthImage from "../components/fullWidthImage";
 
 
 export default () => {
@@ -36,14 +37,15 @@ export default () => {
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      {/* <SectionTitle
-        pretitle="A DeFi wallet for all your finances"
-        title="Learn what NED + web3/blockchain can do for you">
-        Web3 is about freedom, blockchain is about security and privacy and we
-        know how to put those powers in the palm of your hand. A DeFi wallet
-        focused on your experience and your finances.
+      <SectionTitle
+        pretitle="A real DeFi wallet"
+        title="Decentralized governance">
+        Ned Finance is a fully decentralized, community governed platform that
+        enables holders to discuss about the future of the platform, send
+        proposals and vote for them.
       </SectionTitle>
-      <Video /> */}
+      {/* <Video /> */}
+      <FullWidthImage />
       <SectionTitle
         pretitle="Why a DeFi wallet?"
         title="The most fundamental piece to interact with web3 is a wallet">

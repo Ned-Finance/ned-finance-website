@@ -4,7 +4,7 @@ import { Disclosure } from "@headlessui/react";
 export default function Navbar() {
   const navigation = [
     // { label: "Doxing", href: "/doxing", target: "_self" },
-    // { label: "Governance", href: "/ned-governance", target: "_self" },
+    { label: "Governance", href: "/ned-governance", target: "_self" },
     { label: "NFT Collection", href: "/ned-nft-collection", target: "_self" },
     { label: "Roadmap", href: "/roadmap", target: "_self" },
     { label: "Blog", href: "https://blog.ned.finance", target: "_blank" },
