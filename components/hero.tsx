@@ -15,17 +15,17 @@ export default function Hero() {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-ned-green to-ned-blue font-calSans">
-              Multichain DeFi Wallet, made simple
+              All things finance, for DeFi
             </h1>
             <div className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-              <div>Your personal DeFi Wallet for the fastest blockchains. </div>
-              <div className="flex mt-2">
+              <div>Payments platform & DeFi wallet. </div>
+              {/* <div className="flex mt-2">
                 <div className="flex ml-1 mt-1">
                   <Image className="mr-2" height={20} src={solanaIsotype} alt="Solana"></Image>
                   <Image className="mr-2" height={20} src={suiIsotype} alt="Sui"></Image>
                   <Image height={20} src={aptosIsotype} alt="Aptos"></Image>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex flex-col items-start space-x-3 space-y-3 sm:space-y-0 sm:items-center sm:flex-row">
@@ -74,7 +74,7 @@ export default function Hero() {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Only for the <span className="text-ned-green">fastest</span> blockchains
+            Top <span className="text-ned-green">fastest</span> blockchains
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">

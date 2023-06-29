@@ -32,17 +32,17 @@ export default () => {
         pretitle="Ned Benefits"
         title="Web3 and DeFi for everybody">
         Web3 and DeFi shouldn't be hard, we are focused on removing the
-        difficulties from blockchain world while giving new tools to the users
-        to empower them in their finances.
+        difficulties from the blockchain world while giving new tools to the
+        users to empower them in their finances.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
         pretitle="A real DeFi wallet"
         title="Decentralized governance">
-        Ned Finance is a fully decentralized, community governed platform that
-        enables holders to discuss about the future of the platform, send
-        proposals and vote for them.
+        Ned Finance is a fully decentralized, community-governed platform that
+        enables holders to discuss the future of the platform, send proposals
+        and vote for them.
       </SectionTitle>
       {/* <Video /> */}
       <FullWidthImage />
