@@ -1,34 +1,27 @@
 import Head from "next/head";
-import Hero from "../components/hero";
+import Hero from "../components/home/hero";
+import { Wallet } from "../components/home/wallet";
 import Navbar from "../components/navbar";
-import SectionTitle from "../components/sectionTitle";
-
-import { benefitOne, benefitTwo } from "../components/data";
-import Video from "../components/video";
-import Benefits from "../components/benefits";
-import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
-import Cta from "../components/cta";
-import Faq from "../components/faq";
-import Features from "../components/features";
-import FullWidthImage from "../components/fullWidthImage";
-
 
 export default () => {
-  return (
-    <>
-      <Head>
-        <title>Ned Finance Wallet</title>
-        <meta
-          name="description"
-          content="Ned Finance is a DeFi wallet that enables payments, investments, savings, nfts in a safe environment."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<>
+			<Head>
+				<title>Ned Finance Wallet</title>
+				<meta
+					name="description"
+					content="Ned Finance is a DeFi wallet that enables payments, investments, savings, nfts in a safe environment."
+				/>
+				<link
+					rel="icon"
+					href="/favicon.ico"
+				/>
+			</Head>
 
-      <Navbar />
-      <Hero />
-      <SectionTitle
+			<Navbar />
+			<Hero />
+			<Wallet />
+			{/* <SectionTitle
         pretitle="Ned Benefits"
         title="Web3 and DeFi for everybody">
         Web3 and DeFi shouldn't be hard, we are focused on removing the
@@ -44,7 +37,6 @@ export default () => {
         enables holders to discuss the future of the platform, send proposals
         and vote for them.
       </SectionTitle>
-      {/* <Video /> */}
       <FullWidthImage />
       <SectionTitle
         pretitle="Why a DeFi wallet?"
@@ -54,15 +46,13 @@ export default () => {
         process is the wallet, that's why we believe you should
         <strong className="text-ned-green"> own your keys</strong>.
       </SectionTitle>
-      {/* <Testimonials /> */}
       <Features></Features>
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         You have questions and we have answers.
       </SectionTitle>
       <Faq />
       <Cta />
-      <Footer />
-      {/* <PopupWidget /> */}
-    </>
-  );
-}
+      <Footer /> */}
+		</>
+	);
+};

@@ -1,12 +1,11 @@
-import { CheckCircleIcon, Cog6ToothIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Image from "next/image";
+import Navbar from "../../components/navbar";
 
 export default () => {
 	const contentStyle = {
@@ -32,7 +31,7 @@ export default () => {
 			<Navbar />
 			<div className="container p-8 mx-auto xl:px-0 flex flex-wrap flex-row">
 				<div className="w-full mb-24">
-					<h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-6xl lg:leading-tight xl:text-8xl xl:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-ned-green to-ned-blue font-calSans w-min">
+					<h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-6xl lg:leading-tight xl:text-8xl xl:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-ned-green to-ned-blue font-SFProDisplay w-min">
 						Roadmap
 					</h1>
 					<p className="text-white">

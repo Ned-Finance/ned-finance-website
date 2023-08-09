@@ -3,40 +3,69 @@
 @tailwind utilities;
 
 @layer base {
+	html,
+	body {
+		@apply bg-trueGray-900;
+		font-feature-settings: "rlig" 1, "calt" 1;
+	}
 
-  html,
-  body {
-    @apply bg-trueGray-900;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: 700;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-Bold.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-Bold.woff");
+	}
 
-  @font-face {
-    font-family: "CalSans";
-    font-weight: 400;
-    src: url("../assets/fonts/CalSans-SemiBold.woff2");
-  }
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: 700;
+		font-style: italic;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-BoldItalic.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-BoldItalic.woff");
+	}
 
-  @font-face {
-    font-family: "Inter";
-    font-weight: normal;
-    src: url("../assets/fonts/Inter-Regular.ttf");
-  }
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: normal;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-Regular.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-Regular.woff");
+	}
 
-  @font-face {
-    font-family: "Inter";
-    font-weight: bold;
-    src: url("../assets/fonts/Inter-Bold.ttf");
-  }
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: normal;
+		font-style: italic;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-RegularItalic.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-RegularItalic.woff");
+	}
 
-  @font-face {
-    font-family: "Noto Sans";
-    font-weight: normal;
-    src: url("../assets/fonts/NotoSans-Regular.ttf");
-  }
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: 300;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-Light.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-Light.woff");
+	}
 
-  @font-face {
-    font-family: "Noto Sans";
-    font-weight: bold;
-    src: url("../assets/fonts/NotoSans-Bold.ttf");
-  }
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: 300;
+		font-style: italic;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-LightItalic.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-LightItalic.woff");
+	}
+
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: 200;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-Thin.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-Thin.woff");
+	}
+
+	@font-face {
+		font-family: "SFProDisplay";
+		font-weight: 200;
+		font-style: italic;
+		src: url("../assets/fonts/SFProDisplay/SF-Pro-Display-ThinItalic.woff2"),
+			url("../assets/fonts/SFProDisplay/SF-Pro-Display-ThinItalic.woff");
+	}
 }
