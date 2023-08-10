@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/home/hero";
+import { Payments } from "../components/home/payments";
 import { Wallet } from "../components/home/wallet";
 import Navbar from "../components/navbar";
 
@@ -19,8 +20,9 @@ export default () => {
 			</Head>
 
 			<Navbar />
-			<Hero />
-			<Wallet />
+			<Hero index={1} />
+			<Wallet index={1} />
+			<Payments index={1} />
 			{/* <SectionTitle
         pretitle="Ned Benefits"
         title="Web3 and DeFi for everybody">

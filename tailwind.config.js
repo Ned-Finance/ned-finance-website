@@ -33,11 +33,20 @@ module.exports = {
 					800: "#0087B8",
 					900: "#0078A3",
 				},
+				"ned-pink": {
+					DEFAULT: "#FAA6FF",
+				},
+				"ned-yellow": {
+					DEFAULT: "#FFAD60",
+				},
 			},
 		},
 		fontFamily: {
 			sans: ["SFProDisplay", ...defaultTheme.fontFamily.sans],
 			SFProDisplay: ["SFProDisplay"],
+		},
+		backgroundImage: {
+			"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 		},
 	},
 	variants: {
