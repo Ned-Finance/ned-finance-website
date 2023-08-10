@@ -1,34 +1,24 @@
-import {
-	motion,
-	useMotionValueEvent,
-	useScroll,
-	useTransform,
-} from "framer-motion";
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import { motion, useMotionValueEvent, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useCallback, useRef } from "react";
-import { useWindowSize } from "rooks";
 import { Props } from "../../common/props";
+import { scroll, transformer } from "../../common/utils/animation";
 import indexedFundsImg from "../../public/img/home/indexed-funds.png";
 import { Container } from "../container";
 
-export const Wallet = (props: Props) => {
+const Wallet = (props: Props) => {
 	const ref = useRef(null);
-	const { scrollYProgress } = useScroll({
-		target: ref,
-		offset: ["start end", "end"],
-	});
-	const windowSize = useWindowSize();
-	const scaleFirstLine = useTransform(scrollYProgress, [0, 0.6], [0.7, 1]);
-	const opacityFirstLine = useTransform(scrollYProgress, [0, 0.6], [0, 1]);
-	const opacitySecondLine = useTransform(scrollYProgress, [0.6, 0.8], [0, 1]);
+	const { scrollYProgress } = scroll(ref)();
+	const propertyTransformer = transformer(scrollYProgress);
 	const opacityFeatures = useCallback(
 		(index: number) =>
-			useTransform(scrollYProgress, [0.6 + 0.05 * index, 0.8], [0, 1]),
+			useTransform(scrollYProgress, [0.5 + 0.09 * index, 0.8], [0, 1]),
 		[]
 	);
 	const marginTopFeatures = useCallback(
 		(index: number) =>
-			useTransform(scrollYProgress, [0.6 + 0.05 * index, 0.8], [300, 0]),
+			useTransform(scrollYProgress, [0.5 + 0.09 * index, 0.8], [300, 0]),
 		[]
 	);
 
@@ -39,21 +29,25 @@ export const Wallet = (props: Props) => {
 	return (
 		<>
 			<Container
-				className="flex flex-wrap"
+				className="flex overflow-y-hidden pb-16"
 				ref={ref}>
-				<div className="w-full h-full flex flex-col">
+				<div className="w-full h-full flex flex-col mx-8">
 					<motion.div
-						style={{ opacity: opacityFirstLine, scale: scaleFirstLine }}>
+						style={{
+							opacity: propertyTransformer([0, 0.6], [0, 1]),
+							scale: propertyTransformer([0, 0.4], [0.5, 1]),
+						}}>
 						<h2 className="text-6xl text-white text-center">
 							One DeFi wallet for all your needs
 						</h2>
 					</motion.div>
-					<motion.div style={{ opacity: opacitySecondLine }}>
-						<h2 className="mt-2 text-5xl font-thin text-ned-green text-center">
+					<motion.div
+						style={{ opacity: propertyTransformer([0.4, 0.5], [0, 1]) }}>
+						<h2 className="mt-2 text-4xl font-thin text-ned-green text-center">
 							Investments, Savings, NFTs, Payments, Swaps and more
 						</h2>
 					</motion.div>
-					<div className="mt-auto h-3/5 mb-16 mx-8 flex">
+					<div className="mt-16 h-3/5 mb-8 flex">
 						<motion.div
 							className="border rounded-xl border-ned-green w-1/3 h-full relative px-8 pt-8 flex flex-col items-center justify-between border-opacity-20 overflow-hidden"
 							style={{
@@ -61,7 +55,7 @@ export const Wallet = (props: Props) => {
 								translateY: marginTopFeatures(0),
 							}}>
 							<div className="z-0 absolute top-[-30px] right-0 left-[30px] bottom-0 blur-2xl rounded-xl bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-10% from-ned-green to-60% h-full w-full"></div>
-							<h3 className="text-4xl text-white font-light text-center mb-8">
+							<h3 className="text-3xl text-ned-green font-light text-center mb-8">
 								Investments
 							</h3>
 							<Image
@@ -78,7 +72,7 @@ export const Wallet = (props: Props) => {
 								translateY: marginTopFeatures(1),
 							}}>
 							<div className="z-0 absolute top-[-30px] right-0 left-[30px] bottom-0 blur-2xl rounded-xl bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-10% from-ned-pink to-60% h-full w-full"></div>
-							<h3 className="text-4xl text-white font-light text-center mb-8">
+							<h3 className="text-3xl text-ned-pink font-light text-center mb-8">
 								Savings
 							</h3>
 							<Image
@@ -95,7 +89,7 @@ export const Wallet = (props: Props) => {
 								translateY: marginTopFeatures(2),
 							}}>
 							<div className="z-0 absolute top-[-30px] right-0 left-[30px] bottom-0 blur-2xl rounded-xl bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-10% from-ned-yellow to-60% h-full w-full"></div>
-							<h3 className="text-4xl text-white font-light text-center mb-8">
+							<h3 className="text-3xl text-ned-yellow font-light text-center mb-8">
 								Swap
 							</h3>
 							<Image
@@ -106,8 +100,23 @@ export const Wallet = (props: Props) => {
 							/>
 						</motion.div>
 					</div>
+					<motion.div
+						className="mt-2"
+						style={{
+							opacity: propertyTransformer([0.92, 1], [0, 1]),
+							translateX: propertyTransformer([0.92, 1], [-200, 0]),
+						}}>
+						<button
+							rel="noopener"
+							className="w-auto mt-6 mx-auto px-12 py-2 text-lg font-medium text-center border border-ned-green text-black bg-transparent text-ned-green rounded-full flex items-center">
+							<span className="flex-1">Discover all features</span>{" "}
+							<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
+						</button>
+					</motion.div>
 				</div>
 			</Container>
 		</>
 	);
 };
+
+export default Wallet;

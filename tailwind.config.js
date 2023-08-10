@@ -7,6 +7,19 @@ module.exports = {
 	// darkMode: "class", // or 'media' or 'class'
 	theme: {
 		extend: {
+			animation: {
+				"animate-bounce-right": "animate-bounce-right 1s ease-in-out infinite",
+			},
+			keyframes: {
+				"animate-bounce-right": {
+					"0%, 100%": {
+						transform: "translateY(-25%)",
+					},
+					"50%": {
+						transform: "translateY(0)",
+					},
+				},
+			},
 			colors: {
 				trueGray: colors.trueGray,
 				"ned-green": {

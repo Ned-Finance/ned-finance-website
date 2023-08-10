@@ -1,7 +1,10 @@
 import Head from "next/head";
+import Cta from "../components/cta";
+import Footer from "../components/footer";
+import Community from "../components/home/community";
 import Hero from "../components/home/hero";
-import { Payments } from "../components/home/payments";
-import { Wallet } from "../components/home/wallet";
+import Payments from "../components/home/payments";
+import Wallet from "../components/home/wallet";
 import Navbar from "../components/navbar";
 
 export default () => {
@@ -20,9 +23,12 @@ export default () => {
 			</Head>
 
 			<Navbar />
-			<Hero index={1} />
-			<Wallet index={1} />
-			<Payments index={1} />
+			<Hero />
+			<Wallet />
+			<Payments />
+			<Community />
+			<Cta />
+			<Footer />
 			{/* <SectionTitle
         pretitle="Ned Benefits"
         title="Web3 and DeFi for everybody">

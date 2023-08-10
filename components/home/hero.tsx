@@ -8,10 +8,11 @@ import backgroundHeroImg from "../../public/img/home/background-hero.png";
 import { Container } from "../container";
 
 export default function Hero(props: Props) {
+	const index = 1;
 	const { scrollYProgress, scrollY } = useScroll();
 	const windowSize = useWindowSize();
-	const start = windowSize.innerHeight * (props.index - 1);
-	const end = windowSize.innerHeight * props.index;
+	const start = windowSize.innerHeight * (index - 1);
+	const end = windowSize.innerHeight * index;
 	const scale = useTransform(scrollY, [start, end], [1, 3]);
 	const opacityBackground = useTransform(scrollY, [start, end], [1, -1]);
 	const opacity = useTransform(scrollY, [start, end], [1, -0.5]);
@@ -21,8 +22,8 @@ export default function Hero(props: Props) {
 	}, [start, end]);
 	return (
 		<>
-			<Container className="flex flex-wrap relative">
-				<motion.div className="flex items-center justify-center w-full absolute left-0 right-0 max-h-[90%] z-0">
+			<Container className="flex relative h-screen z-0">
+				<motion.div className="flex items-center justify-center w-full absolute left-0 right-0">
 					<motion.div
 						style={{
 							scale: scale,

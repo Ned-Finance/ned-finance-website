@@ -1,8 +1,7 @@
 import Link from "next/link";
-import React from "react";
-import Container from "./container";
+import { Container } from "./container";
 
-export default function Footer() {
+const Footer = () => {
 	const navigation = [
 		// { label: "Doxing", href: "/doxing", target: "_self" },
 		{ label: "NFT Collection", href: "/ned-nft-collection", target: "_self" },
@@ -15,7 +14,7 @@ export default function Footer() {
 		{ label: "Privacy Policy", href: "/privacy-policy", target: "_self" },
 	];
 	return (
-		<div className="relative">
+		<div className="relative mx-8">
 			<Container>
 				<div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
 					<div className="lg:col-span-2">
@@ -100,7 +99,7 @@ export default function Footer() {
 			</Container>
 		</div>
 	);
-}
+};
 
 const Twitter = ({ size = 24 }) => (
 	<svg
@@ -135,3 +134,5 @@ const Discord = ({ size = 24 }) => (
 		</g>
 	</svg>
 );
+
+export default Footer;
