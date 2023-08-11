@@ -6,6 +6,8 @@ import { useWindowSize } from "rooks";
 import { Props } from "../../common/props";
 import { scroll, transformer } from "../../common/utils/animation";
 import indexedFundsImg from "../../public/img/home/indexed-funds.png";
+import savingsImg from "../../public/img/home/savings.png";
+import swapImg from "../../public/img/home/swap.png";
 import Container from "../container";
 
 const Wallet = (props: Props) => {
@@ -93,8 +95,8 @@ const Wallet = (props: Props) => {
 							</h3>
 							<Image
 								className="z-10 relative mt-auto h-fit h-auto"
-								src={indexedFundsImg}
-								alt="Indexed funds"
+								src={savingsImg}
+								alt="Savings"
 								loading="eager"
 							/>
 						</motion.div>
@@ -110,8 +112,8 @@ const Wallet = (props: Props) => {
 							</h3>
 							<Image
 								className="z-10 relative mt-auto h-fit h-auto"
-								src={indexedFundsImg}
-								alt="Indexed funds"
+								src={swapImg}
+								alt="Swap"
 								loading="eager"
 							/>
 						</motion.div>
