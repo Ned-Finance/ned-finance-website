@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useWindowSize } from "rooks";
 import { Props } from "../../common/props";
 import backgroundHeroImg from "../../public/img/home/background-hero.png";
-import { Container } from "../container";
+import Container from "../container";
 
 export default function Hero(props: Props) {
 	const index = 1;
@@ -46,19 +46,19 @@ export default function Hero(props: Props) {
 							style={{
 								opacity: opacity,
 							}}>
-							<h1 className="text-6xl font-bold leading-snug tracking-tight text-gray-800 lg:text-8xl lg:leading-tight xl:text-9xl xl:leading-tight text-white">
+							<h1 className="mb-0 lg:mb-4 xl:mb-4 text-7xl font-bold leading-snug tracking-tight text-gray-800 lg:text-8xl xl:text-9xl text-white">
 								One app
 							</h1>
-							<p className="mb-8 font-light text-5xl leading-normal text-white lg:text-xl xl:text-8xl">
+							<p className="mb-8 font-light text-4xl leading-normal text-white lg:text-5xl xl:text-8xl">
 								Your own bank
 							</p>
-							<p className="mb-10 font-light text-5xl leading-normal text-ned-green lg:text-xl xl:text-4xl">
+							<p className="mb-10 font-light text-2xl leading-normal text-ned-green lg:text-3xl xl:text-3xl">
 								Finances made easy
 							</p>
 						</motion.div>
 					</div>
 
-					<div className="mt-auto text-white font-thin mb-8 ">
+					<div className="mt-auto text-white text-xl font-thin mb-16">
 						<motion.div
 							style={{
 								opacity: opacity,

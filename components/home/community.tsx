@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { Props } from "../../common/props";
 import { scroll, transformer } from "../../common/utils/animation";
 import GovernanceImg from "../../public/img/home/governance.png";
-import { Container } from "../container";
+import Container from "../container";
 
 const Community = (props: Props) => {
 	const ref = useRef(null);
@@ -31,20 +31,20 @@ const Community = (props: Props) => {
 							opacity: propertyTransformer([0, 0.6], [0, 1]),
 							scale: propertyTransformer([0, 0.4], [0.5, 1]),
 						}}>
-						<h2 className="text-6xl text-white text-center">
+						<h2 className="text-5xl lg:text-6xl xl:text-6xl text-white text-center">
 							Built for everyone
 						</h2>
 					</motion.div>
 					<motion.div
 						style={{ opacity: propertyTransformer([0.4, 0.5], [0, 1]) }}>
-						<h2 className="mt-2 text-4xl font-thin text-ned-yellow text-center">
+						<h2 className="mt-4 lg:mt-2 xl:mt-2 text-3xl lg:text-4xl xl:text-4xl font-thin text-ned-yellow text-center">
 							DeFi Governance
 						</h2>
 					</motion.div>
-					<div className="h-auto flex relative">
+					<div className="h-auto flex relative my-8 lg:my-0 xl:my-0">
 						<div>
 							<motion.div
-								className="ml-4 w-full h-full relative px-8 flex flex-col items-center justify-between overflow-hidden"
+								className="ml-0 w-full h-full relative px-0 lg:px-8 xl:px-8 flex flex-col items-center justify-between overflow-hidden"
 								style={{
 									opacity: propertyTransformer([0.4, 0.6], [0, 1]),
 									scale: propertyTransformer([0.4, 0.6], [3, 1]),
@@ -66,7 +66,7 @@ const Community = (props: Props) => {
 						}}>
 						<button
 							rel="noopener"
-							className="w-auto mx-auto px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center">
+							className="w-auto mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center">
 							<span className="flex-1">Learn about our vision</span>{" "}
 							<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
 						</button>

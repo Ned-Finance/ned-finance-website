@@ -2,54 +2,70 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import { motion, useMotionValueEvent, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useCallback, useRef } from "react";
+import { useWindowSize } from "rooks";
 import { Props } from "../../common/props";
 import { scroll, transformer } from "../../common/utils/animation";
 import indexedFundsImg from "../../public/img/home/indexed-funds.png";
-import { Container } from "../container";
+import Container from "../container";
 
 const Wallet = (props: Props) => {
 	const ref = useRef(null);
+	const windowSize = useWindowSize();
+	const mobileDiff = windowSize.innerWidth < 1024 ? 0.3 : 0;
 	const { scrollYProgress } = scroll(ref)();
 	const propertyTransformer = transformer(scrollYProgress);
 	const opacityFeatures = useCallback(
 		(index: number) =>
-			useTransform(scrollYProgress, [0.5 + 0.09 * index, 0.8], [0, 1]),
+			useTransform(
+				scrollYProgress,
+				[0.5 + 0.09 * index - mobileDiff, 0.8 - mobileDiff],
+				[0, 1]
+			),
 		[]
 	);
 	const marginTopFeatures = useCallback(
 		(index: number) =>
-			useTransform(scrollYProgress, [0.5 + 0.09 * index, 0.8], [300, 0]),
+			useTransform(
+				scrollYProgress,
+				[0.5 + 0.09 * index - mobileDiff, 0.8 - mobileDiff],
+				[300, 0]
+			),
 		[]
 	);
 
 	useMotionValueEvent(scrollYProgress, "change", (latest) => {
-		console.log("x changed to", latest);
+		console.log("wallet ===> x changed to", latest);
 	});
 
 	return (
 		<>
 			<Container
-				className="flex overflow-y-hidden pb-16"
+				className="flex overflow-y-hidden pb-8 lg:pb-16 xl:pb-16"
 				ref={ref}>
-				<div className="w-full h-full flex flex-col mx-8">
+				<div className="w-full h-full flex flex-col mx-0 lg:mx-8 xl:mx-8">
 					<motion.div
 						style={{
-							opacity: propertyTransformer([0, 0.6], [0, 1]),
-							scale: propertyTransformer([0, 0.4], [0.5, 1]),
+							opacity: propertyTransformer([0, 0.6 - mobileDiff], [0, 1]),
+							scale: propertyTransformer([0, 0.4 - mobileDiff], [0.5, 1]),
 						}}>
-						<h2 className="text-6xl text-white text-center">
+						<h2 className="text-5xl lg:text-6xl xl:text-6xl text-white text-center">
 							One DeFi wallet for all your needs
 						</h2>
 					</motion.div>
 					<motion.div
-						style={{ opacity: propertyTransformer([0.4, 0.5], [0, 1]) }}>
-						<h2 className="mt-2 text-4xl font-thin text-ned-green text-center">
+						style={{
+							opacity: propertyTransformer(
+								[0.4 - mobileDiff, 0.5 - mobileDiff],
+								[0, 1]
+							),
+						}}>
+						<h2 className="mt-4 lg:mt-2 xl:mt-2 text-3xl lg:text-4xl xl:text-4xl font-thin text-ned-green text-center">
 							Investments, Savings, NFTs, Payments, Swaps and more
 						</h2>
 					</motion.div>
-					<div className="mt-16 h-3/5 mb-8 flex">
+					<div className="mt-8 lg:mt-16 xl:mt-16 h-3/5 mb-8 flex flex-col lg:flex-row xl:flex-row">
 						<motion.div
-							className="border rounded-xl border-ned-green w-1/3 h-full relative px-8 pt-8 flex flex-col items-center justify-between border-opacity-20 overflow-hidden"
+							className="border rounded-xl border-ned-green w-full lg:w-1/3 xl:w-1/3 h-full relative px-8 pt-8 flex flex-col items-center justify-between border-opacity-20 overflow-hidden"
 							style={{
 								opacity: opacityFeatures(0),
 								translateY: marginTopFeatures(0),
@@ -66,7 +82,7 @@ const Wallet = (props: Props) => {
 							/>
 						</motion.div>
 						<motion.div
-							className="ml-4 border rounded-xl border-ned-pink w-1/3 h-full relative px-8 pt-8 flex flex-col items-center justify-between border-opacity-20 overflow-hidden"
+							className="mt-4 lg:mt-0 xl:mt-0 lg:ml-4 xl:ml-4 border rounded-xl border-ned-pink w-full lg:w-1/3 xl:w-1/3 h-full relative px-8 pt-8 flex flex-col items-center justify-between border-opacity-20 overflow-hidden"
 							style={{
 								opacity: opacityFeatures(1),
 								translateY: marginTopFeatures(1),
@@ -83,7 +99,7 @@ const Wallet = (props: Props) => {
 							/>
 						</motion.div>
 						<motion.div
-							className="ml-4 border rounded-xl border-ned-yellow w-1/3 h-full relative px-8 pt-8 flex flex-col items-center justify-between border-opacity-20 overflow-hidden"
+							className="mt-4 lg:mt-0 xl:mt-0 lg:ml-4 xl:ml-4 border rounded-xl border-ned-yellow w-full lg:w-1/3 xl:w-1/3 h-full relative px-8 pt-8 flex flex-col items-center justify-between border-opacity-20 overflow-hidden"
 							style={{
 								opacity: opacityFeatures(2),
 								translateY: marginTopFeatures(2),
@@ -101,15 +117,15 @@ const Wallet = (props: Props) => {
 						</motion.div>
 					</div>
 					<motion.div
-						className="mt-2"
+						className="mt-0 lg:mt-2 xl:mt-2"
 						style={{
 							opacity: propertyTransformer([0.92, 1], [0, 1]),
 							translateX: propertyTransformer([0.92, 1], [-200, 0]),
 						}}>
 						<button
 							rel="noopener"
-							className="w-auto mt-6 mx-auto px-12 py-2 text-lg font-medium text-center border border-ned-green text-black bg-transparent text-ned-green rounded-full flex items-center">
-							<span className="flex-1">Discover all features</span>{" "}
+							className="w-auto mt-6 mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-green text-black bg-transparent text-ned-green rounded-full flex items-center">
+							<span className="flex-1">Discover Ned</span>{" "}
 							<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
 						</button>
 					</motion.div>
