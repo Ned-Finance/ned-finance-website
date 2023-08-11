@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { useWindowSize } from "rooks";
 import { Props } from "../../common/props";
+import backgroundHeroMobileImg from "../../public/img/home/background-hero-mobile.png";
 import backgroundHeroImg from "../../public/img/home/background-hero.png";
 import Container from "../container";
 
@@ -23,7 +24,7 @@ export default function Hero(props: Props) {
 	return (
 		<>
 			<Container className="flex relative h-screen z-0">
-				<motion.div className="flex items-center justify-center w-full absolute left-0 right-0">
+				<motion.div className="flex mt-64 lg:mt-0 xl:mt-0 items-center justify-center w-full absolute left-0 right-0">
 					<motion.div
 						style={{
 							scale: scale,
@@ -31,9 +32,14 @@ export default function Hero(props: Props) {
 						}}>
 						<div className="hidden lg:block">
 							<Image
-								// width={screenSize.width}
-								// height={screenSize.height - 200}
 								src={backgroundHeroImg}
+								alt="All things finance"
+								loading="eager"
+							/>
+						</div>
+						<div className="lg:hidden">
+							<Image
+								src={backgroundHeroMobileImg}
 								alt="All things finance"
 								loading="eager"
 							/>
