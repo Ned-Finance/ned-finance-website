@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Cta from "../components/cta";
 import Footer from "../components/footer";
 import Community from "../components/home/community";
+import Cta from "../components/home/cta";
 import Hero from "../components/home/hero";
 import Payments from "../components/home/payments";
 import Wallet from "../components/home/wallet";
-import Navbar from "../components/navbar";
 
 export default () => {
 	return (
@@ -22,7 +21,6 @@ export default () => {
 				/>
 			</Head>
 
-			<Navbar />
 			<Hero />
 			<Wallet />
 			<Payments />

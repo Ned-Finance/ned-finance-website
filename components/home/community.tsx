@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
-import { motion, useMotionValueEvent, useTransform } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { Props } from "../../common/props";
@@ -16,9 +16,9 @@ const Community = (props: Props) => {
 		return `blur(${value > 0 ? value : 0}px)`;
 	});
 
-	useMotionValueEvent(scrollYProgress, "change", (latest) => {
-		console.log("x changed to", (1 - latest) * 100);
-	});
+	// useMotionValueEvent(scrollYProgress, "change", (latest) => {
+	// 	console.log("x changed to", (1 - latest) * 100);
+	// });
 
 	return (
 		<>

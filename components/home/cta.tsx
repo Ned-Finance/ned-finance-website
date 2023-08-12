@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import { scroll, transformer } from "../common/utils/animation";
-import Container from "./container";
+import { scroll, transformer } from "../../common/utils/animation";
+import Container from "../container";
 
 const Cta = () => {
 	const ref = useRef(null);
