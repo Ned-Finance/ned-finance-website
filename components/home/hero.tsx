@@ -75,7 +75,11 @@ export default function Hero(props: Props) {
 							<p>Unlock the power of blockchain for your finances</p>
 							<button
 								onClick={() => {
+<<<<<<< HEAD
 									window.scrollTo({ top: windowSize.innerHeight - 80 });
+=======
+									window.scrollTo({ top: windowSize.innerHeight - 200 });
+>>>>>>> a6fe95f (Fix scroll to go next section)
 								}}
 								rel="noopener"
 								className="w-auto mt-6 mx-auto px-12 py-2 text-lg font-medium text-center border border-ned-green text-black bg-transparent text-ned-green rounded-full flex items-center">
