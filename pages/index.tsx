@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Footer from "../components/footer";
 import Community from "../components/home/community";
 import Cta from "../components/home/cta";
 import Hero from "../components/home/hero";
@@ -26,7 +25,6 @@ export default () => {
 			<Payments />
 			<Community />
 			<Cta />
-			<Footer />
 			{/* <SectionTitle
         pretitle="Ned Benefits"
         title="Web3 and DeFi for everybody">

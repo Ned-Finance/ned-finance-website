@@ -1,10 +1,6 @@
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
-
 export default () => {
 	return (
 		<>
-			<Navbar />
 			<div className="container p-8 mx-auto xl:px-0 text-white font-light max-w-screen-xl">
 				<h1 className="text-4xl">Terms of use</h1>
 				<p className="my-2 text-trueGray-400">Last update: June 13, 2023</p>
@@ -303,7 +299,6 @@ export default () => {
 					support@ned.finance.
 				</p>
 			</div>
-			<Footer />
 		</>
 	);
 };
