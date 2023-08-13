@@ -1,7 +1,10 @@
 import { NextSeo } from "next-seo";
+import ReactGA from "react-ga4";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import "../css/tailwind.css";
+
+ReactGA.initialize("G-455KKGX9KE");
 
 function MyApp({ Component, pageProps }) {
 	return (
