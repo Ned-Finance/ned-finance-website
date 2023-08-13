@@ -59,24 +59,22 @@ export default function Navbar() {
 								<Disclosure.Panel
 									className="flex flex-wrap flex-col w-full lg:hidden h-[calc(100vh-70px)] absolute left-0 right-0 top-[70px] bottom-0 backdrop-blur-md bg-black/30 flex items-center justify-center"
 									onClick={(e) => e.stopPropagation()}>
-									<>
-										{navigation.map((item, index) => (
-											<Link
-												className="mb-8"
-												key={index}
-												href={item.href}
-												target={item.target}>
-												<span className="w-full px-4 py-2 text-ned-green text-5xl font-light rounded-md hover:text-ned-green focus:text-ned-green focus:bg-ned-green-100 focus:outline-none">
-													{item.label}
-												</span>
-											</Link>
-										))}
-										{/* <Link href="/">
-                      <span className="w-full px-6 py-2 mt-3 text-center text-black bg-ned-green rounded-md lg:ml-5">
-                        Get Started
-                      </span>
-                    </Link> */}
-									</>
+									{({ close }) => (
+										<>
+											{navigation.map((item, index) => (
+												<Link
+													onClick={() => close()}
+													className="mb-8"
+													key={index}
+													href={item.href}
+													target={item.target}>
+													<span className="w-full px-4 py-2 text-ned-green text-5xl font-light rounded-md hover:text-ned-green focus:text-ned-green focus:bg-ned-green-100 focus:outline-none">
+														{item.label}
+													</span>
+												</Link>
+											))}
+										</>
+									)}
 								</Disclosure.Panel>
 							</div>
 						</>
