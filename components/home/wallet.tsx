@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
-import { motion, useMotionValueEvent, useTransform } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useCallback, useRef } from "react";
 import { useWindowSize } from "rooks";
@@ -35,13 +35,14 @@ const Wallet = (props: Props) => {
 		[]
 	);
 
-	useMotionValueEvent(scrollYProgress, "change", (latest) => {
-		console.log("wallet ===> x changed to", latest);
-	});
+	// useMotionValueEvent(scrollYProgress, "change", (latest) => {
+	// 	console.log("wallet ===> x changed to", latest);
+	// });
 
 	return (
 		<>
 			<Container
+				id="wallet"
 				className="flex overflow-y-hidden pb-8 lg:pb-16 xl:pb-16"
 				ref={ref}>
 				<div className="w-full h-full flex flex-col mx-0 lg:mx-8 xl:mx-8">
@@ -119,17 +120,19 @@ const Wallet = (props: Props) => {
 						</motion.div>
 					</div>
 					<motion.div
-						className="mt-0 lg:mt-2 xl:mt-2"
+						className="mt-0 lg:mt-2 xl:mt-2 flex"
 						style={{
 							opacity: propertyTransformer([0.92, 1], [0, 1]),
 							translateX: propertyTransformer([0.92, 1], [-200, 0]),
 						}}>
-						<button
+						<a
+							href="https://docs.ned.finance/"
+							target="_blank"
 							rel="noopener"
 							className="w-auto mt-6 mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-green text-black bg-transparent text-ned-green rounded-full flex items-center">
 							<span className="flex-1">Discover Ned</span>{" "}
 							<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
-						</button>
+						</a>
 					</motion.div>
 				</div>
 			</Container>

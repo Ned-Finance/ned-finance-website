@@ -35,7 +35,7 @@ export default function Navbar() {
 
 								<Disclosure.Button
 									aria-label="Toggle Menu"
-									className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-ned-green focus:text-ned-green focus:bg-ned-green-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+									className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-ned-green focus:text-ned-green focus:bg-transparent focus:outline-none">
 									<svg
 										className="w-6 h-6 fill-current"
 										xmlns="http://www.w3.org/2000/svg"
@@ -56,14 +56,17 @@ export default function Navbar() {
 									</svg>
 								</Disclosure.Button>
 
-								<Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+								<Disclosure.Panel
+									className="flex flex-wrap flex-col w-full lg:hidden h-[calc(100vh-70px)] absolute left-0 right-0 top-[70px] bottom-0 backdrop-blur-md bg-black/30 flex items-center justify-center"
+									onClick={(e) => e.stopPropagation()}>
 									<>
 										{navigation.map((item, index) => (
 											<Link
+												className="mb-8"
 												key={index}
 												href={item.href}
 												target={item.target}>
-												<span className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-ned-green focus:text-ned-green focus:bg-ned-green-100 focus:outline-none dark:focus:bg-trueGray-700">
+												<span className="w-full px-4 py-2 text-ned-green text-5xl font-light rounded-md hover:text-ned-green focus:text-ned-green focus:bg-ned-green-100 focus:outline-none">
 													{item.label}
 												</span>
 											</Link>

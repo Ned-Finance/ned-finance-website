@@ -60,16 +60,18 @@ const Community = (props: Props) => {
 						</div>
 					</div>
 					<motion.div
+						className="flex"
 						style={{
 							opacity: propertyTransformer([0.92, 1], [0, 1]),
 							translateX: propertyTransformer([0.92, 1], [-200, 0]),
 						}}>
-						<button
+						<a
+							href="/ned-governance"
 							rel="noopener"
 							className="w-auto mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center">
 							<span className="flex-1">Learn about our vision</span>{" "}
 							<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
-						</button>
+						</a>
 					</motion.div>
 				</div>
 			</Container>

@@ -2,7 +2,7 @@ import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { transformer } from "../../common/utils/animation";
-import backgroundHeroImg from "../../public/img/ned-governance/background-hero.png";
+import backgroundHeroImg from "../../public/img/roadmap/background-hero.png";
 
 const Hero = () => {
 	const ref = useRef(null);
@@ -11,21 +11,9 @@ const Hero = () => {
 		offset: ["end start", "start"],
 	});
 	const propertyTransformer = transformer(scrollYProgress);
-
-	// useMotionValueEvent(scrollYProgress, "change", (latest) => {
-	// 	console.log("x changed to", latest);
-	// });
-
 	return (
-		<div
-			ref={ref}
-			className="w-screen max-w-full mt-16 mb-12 h-[80vh] flex items-center mx-0 relative w-screen ">
-			<motion.div
-				className="z-0 absolute top-[20%] lg:top-0 right-0 left-0 bottom-[20%] lg:bottom-0 opacity-60"
-				style={{
-					opacity: propertyTransformer([1, 0.8], [1, 0]),
-					scale: propertyTransformer([1, 0.8], [1, 0]),
-				}}>
+		<div className="w-screen max-w-full mt-16 mb-12 h-[80vh] flex items-center mx-0 relative w-screen">
+			<motion.div className="z-0 absolute top-[20%] lg:top-0 right-0 left-0 bottom-[20%] lg:bottom-0 opacity-60">
 				<Image
 					className="z-10 relative w-full h-full"
 					style={{ objectFit: "fill", objectPosition: "center" }}
@@ -40,7 +28,7 @@ const Hero = () => {
 					opacity: propertyTransformer([1, 0.8], [1, 0]),
 					scale: propertyTransformer([1, 0.8], [1, 3]),
 				}}>
-				<h1>More than a holder, an owner</h1>
+				<h1>Roadmap</h1>
 			</motion.div>
 		</div>
 	);

@@ -4,8 +4,7 @@ import {
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
+import Hero from "../../components/roadmap/hero";
 
 export default () => {
 	const contentStyle = {
@@ -28,18 +27,8 @@ export default () => {
 
 	return (
 		<>
-			<Navbar />
 			<div className="container p-8 mx-auto xl:px-0 flex flex-wrap flex-row">
-				<div className="w-full mb-24">
-					<h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-6xl lg:leading-tight xl:text-8xl xl:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-ned-green to-ned-blue font-SFProDisplay w-min">
-						Roadmap
-					</h1>
-					<p className="text-white">
-						We expect to deliver new value to our users every month, here you
-						can find all the features we implement and their status. Every day
-						closer to our next goal.
-					</p>
-				</div>
+				<Hero />
 				<VerticalTimeline
 					lineColor={"#27272a"}
 					layout={"1-column-left"}>
@@ -257,7 +246,6 @@ export default () => {
 					</VerticalTimelineElement>
 				</VerticalTimeline>
 			</div>
-			<Footer />
 		</>
 	);
 };
