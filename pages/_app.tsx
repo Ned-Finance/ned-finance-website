@@ -1,12 +1,14 @@
 import { NextSeo } from "next-seo";
+import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import "../css/tailwind.css";
 
-ReactGA.initialize("G-455KKGX9KE");
-
 function MyApp({ Component, pageProps }) {
+	useEffect(() => {
+		ReactGA.initialize("G-455KKGX9KE");
+	}, []);
 	return (
 		<>
 			<NextSeo

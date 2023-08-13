@@ -46,7 +46,7 @@ export default function Hero(props: Props) {
 						</div>
 					</motion.div>
 				</motion.div>
-				<div className="flex flex-col justify-center items-center w-full h-full z-1 relative text-center max-w-2xl">
+				<div className="flex flex-col justify-center items-center w-full h-full z-1 relative text-center max-w-2xl lg:mt-16">
 					<div className="mt-auto">
 						<motion.div
 							style={{
