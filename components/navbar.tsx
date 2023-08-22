@@ -6,7 +6,11 @@ export default function Navbar() {
 		// { label: "Doxing", href: "/doxing", target: "_self" },
 		{ label: "Governance", href: "/ned-governance", target: "_self" },
 		{ label: "NFT Collection", href: "/ned-nft-collection", target: "_self" },
-		{ label: "Roadmap", href: "/roadmap", target: "_self" },
+		{
+			label: "Roadmap",
+			href: "https://trello.com/b/AK2e79wa/ned-roadmap",
+			target: "_blank",
+		},
 		{ label: "Blog", href: "https://blog.ned.finance", target: "_blank" },
 	];
 

@@ -5,7 +5,11 @@ const Footer = () => {
 	const navigation = [
 		// { label: "Doxing", href: "/doxing", target: "_self" },
 		{ label: "NFT Collection", href: "/ned-nft-collection", target: "_self" },
-		{ label: "Roadmap", href: "/roadmap", target: "_self" },
+		{
+			label: "Roadmap",
+			href: "https://trello.com/b/AK2e79wa/ned-roadmap",
+			target: "_blank",
+		},
 		{ label: "Docs", href: "https://docs.ned.finance", target: "_blank" },
 		{ label: "Blog", href: "https://blog.ned.finance", target: "_blank" },
 	];
