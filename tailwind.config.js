@@ -21,7 +21,7 @@ module.exports = {
 				},
 			},
 			colors: {
-				trueGray: colors.trueGray,
+				"true-gray": colors.neutral,
 				"ned-green": {
 					DEFAULT: "#00EFD1",
 					100: "#47FFE7",

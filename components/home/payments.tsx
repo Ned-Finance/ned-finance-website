@@ -157,7 +157,7 @@ const Payments = (props: Props) => {
 									href="https://docs.ned.finance/bussiness/introduction"
 									target="_blank"
 									rel="noopener"
-									className="w-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium border border-ned-pink bg-transparent text-ned-pink rounded-full flex items-center">
+									className="w-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium border border-ned-pink bg-transparent text-ned-pink rounded-full flex items-center transition-colors hover:text-black hover:bg-ned-pink">
 									<span className="">Learn more</span>{" "}
 									<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
 								</a>

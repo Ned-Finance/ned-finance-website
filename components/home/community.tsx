@@ -68,7 +68,7 @@ const Community = (props: Props) => {
 						<a
 							href="/ned-governance"
 							rel="noopener"
-							className="w-auto mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center">
+							className="w-auto mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center transition-colors hover:text-black hover:bg-ned-yellow">
 							<span className="flex-1">Learn about our vision</span>{" "}
 							<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
 						</a>

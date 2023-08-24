@@ -35,7 +35,7 @@ const Cta = () => {
 						href="mailto:contact@ned.finance"
 						target="_blank"
 						rel="noopener"
-						className="w-auto mx-auto px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center">
+						className="w-auto mx-auto px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center transition-colors hover:text-black hover:bg-ned-yellow">
 						<span className="flex-1">Contact us</span>
 					</a>
 				</div>

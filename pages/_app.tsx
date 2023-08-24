@@ -1,6 +1,7 @@
 import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
+import { Toaster } from "react-hot-toast";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import "../css/tailwind.css";
@@ -36,6 +37,7 @@ function MyApp({ Component, pageProps }) {
 					cardType: "summary_large_image",
 				}}
 			/>
+			<Toaster />
 			<Navbar />
 			<Component {...pageProps} />
 			<Footer />

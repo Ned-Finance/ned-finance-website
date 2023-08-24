@@ -3,9 +3,9 @@ export default () => {
 		<>
 			<div className="container p-8 mx-auto xl:px-0 text-white font-light max-w-screen-xl">
 				<h1 className="text-4xl">Privacy Policy</h1>
-				<p className="my-2 text-trueGray-400">Last update: June 13, 2023</p>
+				<p className="my-2 text-true-gray-400">Last update: June 13, 2023</p>
 
-				<hr className="border-trueGray-400 mb-16"></hr>
+				<hr className="border-true-gray-400 mb-16"></hr>
 
 				<p className="my-2">
 					Ned Finance, Eirl. (“us”, “we”, or “our”) operates ned.finance, Ned

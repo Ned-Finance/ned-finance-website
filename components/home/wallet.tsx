@@ -129,7 +129,7 @@ const Wallet = (props: Props) => {
 							href="https://docs.ned.finance/"
 							target="_blank"
 							rel="noopener"
-							className="w-auto mt-6 mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-green text-black bg-transparent text-ned-green rounded-full flex items-center">
+							className="w-auto mt-6 mx-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-green text-black bg-transparent text-ned-green rounded-full flex items-center transition-colors hover:text-black hover:bg-ned-green">
 							<span className="flex-1">Discover Ned</span>{" "}
 							<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
 						</a>

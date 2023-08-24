@@ -5,7 +5,7 @@
 @layer base {
 	html,
 	body {
-		@apply bg-trueGray-900;
+		@apply bg-true-gray-900;
 		font-feature-settings: "rlig" 1, "calt" 1;
 		overflow-x: hidden;
 	}

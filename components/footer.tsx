@@ -18,9 +18,9 @@ const Footer = () => {
 		{ label: "Privacy Policy", href: "/privacy-policy", target: "_self" },
 	];
 	return (
-		<div className="relative mx-8">
+		<div className="relative">
 			<Container>
-				<div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+				<div className="grid mx-0 lg:mx-8 xl:mx-8 grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-true-gray-700 lg:grid-cols-5">
 					<div className="lg:col-span-2">
 						<div>
 							{" "}
@@ -54,7 +54,7 @@ const Footer = () => {
 									href={item.href}
 									className="w-full"
 									target={item.target}>
-									<span className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-ned-green-500 focus:text-ned-green-500 focus:bg-ned-green-100 focus:outline-none dark:focus:bg-trueGray-700">
+									<span className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-ned-green-500 focus:text-ned-green-500 focus:bg-ned-green-100 focus:outline-none dark:focus:bg-true-gray-700">
 										{item.label}
 									</span>
 								</Link>
@@ -69,7 +69,7 @@ const Footer = () => {
 									href={item.href}
 									className="w-full"
 									target={item.target}>
-									<span className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-ned-green-500 focus:text-ned-green-500 focus:bg-ned-green-100 focus:outline-none dark:focus:bg-trueGray-700">
+									<span className="flex px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-ned-green-500 focus:text-ned-green-500 focus:bg-ned-green-100 focus:outline-none dark:focus:bg-true-gray-700">
 										{item.label}
 									</span>
 								</Link>
