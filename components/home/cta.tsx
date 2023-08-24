@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { scroll, transformer } from "../../common/utils/animation";
 import Container from "../container";
-import SignUpPreLaunch from "./signup-pre-launch";
 
 const Cta = () => {
 	const ref = useRef(null);
@@ -33,10 +32,10 @@ const Cta = () => {
 							Available for iOS and Android
 						</p>
 					</div>
-					<div className="w-64 lg:w-72 z-10 flex flex-col">
+					{/* <div className="w-64 lg:w-72 z-10 flex flex-col">
 						<h2 className="text-3xl text-white mb-2">Live on Sep 15th</h2>
 						<SignUpPreLaunch />
-					</div>
+					</div> */}
 				</motion.div>
 			</div>
 		</Container>
