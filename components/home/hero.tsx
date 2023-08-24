@@ -7,6 +7,7 @@ import { Props } from "../../common/props";
 import backgroundHeroMobileImg from "../../public/img/home/background-hero-mobile.png";
 import backgroundHeroImg from "../../public/img/home/background-hero.png";
 import Container from "../container";
+import SignUpPreLaunch from "./signup-pre-launch";
 
 export default function Hero(props: Props) {
 	const index = 1;
@@ -61,9 +62,9 @@ export default function Hero(props: Props) {
 							<p className="mb-10 font-light text-2xl leading-normal text-ned-green lg:text-3xl xl:text-3xl">
 								Finances made easy
 							</p>
-							{/* <div className="flex items-center justify-center">
+							<div className="flex items-center justify-center">
 								<SignUpPreLaunch />
-							</div> */}
+							</div>
 						</motion.div>
 					</div>
 

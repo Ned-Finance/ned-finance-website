@@ -21,7 +21,7 @@ const SignUpPreLaunch = () => {
 	const onRegisterUser = async (userEmail: string) => {
 		setProcessing(true);
 		axios
-			.post("https://api.website.ned.finance", {
+			.post("https://api.website.ned.finance/signup-pre-launch", {
 				email: userEmail,
 			})
 			.then((subscribed) => {
