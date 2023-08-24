@@ -24,20 +24,17 @@ const SignUpPreLaunch = () => {
 			.post("https://api.website.ned.finance/signup-pre-launch", {
 				email: userEmail,
 			})
-			.then((subscribed) => {
-				toast("Amazing Nedster, you are in!", {
-					icon: "👏",
-					style: {
-						borderRadius: "10px",
-						background: "#333",
-						color: "#fff",
-					},
-				});
-				setSubscribedSuccessfully(true);
-			})
-			.catch((error) => {
-				console.log(error);
-				if (error.response && error.response.data.success == false) {
+			.then((response) => {
+				if (response.data.success == false) {
+					toast("Amazing Nedster, you are in!", {
+						icon: "👏",
+						style: {
+							borderRadius: "10px",
+							background: "#333",
+							color: "#fff",
+						},
+					});
+				} else {
 					toast("You are already subscribed, we love you too", {
 						icon: "🫶",
 						style: {
@@ -46,19 +43,23 @@ const SignUpPreLaunch = () => {
 							color: "#fff",
 						},
 					});
-				} else {
-					toast(
-						"Something went wrong, if this continues please drop us a line to press@ned.finance",
-						{
-							icon: "🤦🏻‍♂️",
-							style: {
-								borderRadius: "10px",
-								background: "#333",
-								color: "#fff",
-							},
-						}
-					);
 				}
+
+				setSubscribedSuccessfully(true);
+			})
+			.catch((error) => {
+				console.log(error);
+				toast(
+					"Something went wrong, if this continues please drop us a line to press@ned.finance",
+					{
+						icon: "🤦🏻‍♂️",
+						style: {
+							borderRadius: "10px",
+							background: "#333",
+							color: "#fff",
+						},
+					}
+				);
 			})
 			.finally(() => {
 				setProcessing(false);
