@@ -33,8 +33,10 @@ const Cta = () => {
 							Available for iOS and Android
 						</p>
 					</div>
-					<div className="w-64 lg:w-72 z-10 flex flex-col">
-						<h2 className="text-3xl text-white mb-2">Live on Sep 15th</h2>
+					<div className="w-64 lg:w-80 z-10 flex flex-col">
+						<h2 className="text-3xl text-white mb-2">
+							Private Beta on Sep 15th
+						</h2>
 						<SignUpPreLaunch />
 					</div>
 				</motion.div>

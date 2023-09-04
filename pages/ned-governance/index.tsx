@@ -1,4 +1,3 @@
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import "react-vertical-timeline-component/style.min.css";
 import Benefits from "../../components/benefits";
 import Navbar from "../../components/navbar";
@@ -37,14 +36,14 @@ export default () => {
 						docs
 					</a>
 				</p>
-				<div className="flex justify-center lg:justify-start">
+				{/* <div className="flex justify-center lg:justify-start">
 					<button
 						rel="noopener"
 						className="w-auto mt-6 px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium text-center border border-ned-yellow text-black bg-transparent text-ned-yellow rounded-full flex items-center transition-colors hover:text-black hover:bg-ned-yellow">
 						<span className="flex-1">Tokenomics</span>{" "}
 						<ChevronRightIcon className="ml-2 w-5 h-5 animate-bounce-right" />
 					</button>
-				</div>
+				</div> */}
 			</div>
 		),
 		image: NedToken,
