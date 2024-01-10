@@ -148,7 +148,7 @@ const More = (props: Props) => {
               </h3>
               <div className="mt-4 lg:mt-0 xl:mt-0 w-auto lg:w-2/6 xl:w-2/6 flex justify-end">
                 <a
-                  href="https://docs.ned.finance/ned-wallet/transfers"
+                  href="https://docs.ned.finance/introduction/features"
                   target="_blank"
                   rel="noopener"
                   className="w-auto px-8 lg:px-12 xl:px-12 py-2 text-lg font-medium border border-ned-green bg-transparent text-ned-green rounded-full flex items-center transition-colors hover:text-black hover:bg-white">
